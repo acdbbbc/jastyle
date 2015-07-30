@@ -1,0 +1,18 @@
+
+============================ check All style ===============================
+
+var x = document.querySelectorAll("*");
+for(var i=0; i<x.length; i++){
+  
+  console.log(window.getComputedStyle(x[i]));
+}
+
+
+
+============================ width check ===============================
+
+var x = document.querySelectorAll("*");
+for(var i=0; i<x.length; i++){
+  if(x[i].offsetWidth > 320) x[i].style.background = 'red';
+
+}
